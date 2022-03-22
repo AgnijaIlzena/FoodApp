@@ -13,27 +13,40 @@
 body {
     font-size: 16px;
     margin: 0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+}
+
+.alert,
+nav ul {
+    display: none;
 }
 
 /* NAVIGATION BAR */
 
 nav {
     display: flex; 
-    padding: 10px 0;   
-}
-
-nav ul {
-    display: none;
+    padding: 20px 0;  
+    justify-content: space-between;
+    align-items: center; 
 }
 
 nav img {
-    width: 7%;
+    width: 10%;
+}
+
+.hamburger-mob svg {
+    width: 100%;
+    padding-right: 20px;
+}
+
+.hamburger-mob {
+    background-color: var(--green-light);
 }
 
 /* HEADER INTRODUCTION */
@@ -58,16 +71,19 @@ header div h1 span {
 header div p {
     color: var(--blue-dark);
     padding-bottom: 20px;
+    line-height: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 header .btn-green {
     text-decoration: none;
-    padding: 12px 28px;
+    padding: 14px 24px;
     background-color: var(--green);
     color: var(--white);
-    border-radius: 4px;
-    background: url('../images/button_wave.svg'),
-     var(--green);     
+    border-radius: 6px;
+    background: var(--green) url('../images/button_wave.svg') no-repeat;
+      
 }
 
 header img {
@@ -76,7 +92,11 @@ header img {
 
 main .card {
     text-align: center;
-}
+    background-color: var(--gray-light);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+  }
 
 main .card img {
     width: 100%;
@@ -86,15 +106,14 @@ main .card h2 {
     font-size: 3rem;
     color: var(--green);
 }
-
+   
 main .btn-green {
     text-decoration: none;
-    padding: 12px 28px;
+    padding: 14px 24px;
     background-color: var(--green);
     color: var(--white);
-    border-radius: 4px;
-    background: url('../images/button_wave.svg'),
-     var(--green); 
+    border-radius: 6px;
+    background: var(--green) url('../images/button_wave.svg') no-repeat;
 }
 
 main div p {
@@ -104,4 +123,53 @@ main div p {
 
 main div {
     margin-bottom: 100px;
+}
+
+/* RULES */
+
+.rules h3 {
+    color: var(--green);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.rules-container {
+text-align: center;
+}
+
+.rules-container div {
+    margin: 50px 0 50px 0;
+}
+
+.rules-container p {
+    color: var(--blue-dark);
+    font-size: 0.9rem;
+}
+
+.rules-container img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--green-light);
+    padding: 5px 0 5px 0;
+}
+
+footer h5 {
+    color: var(--green);   
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+footer ul a {
+text-decoration: none;
+color: var(--blue-dark);
+font-size: 0.8rem;
 }
