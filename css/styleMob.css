@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --gray-light: #f5fbfc;
+    --gray-dark: #08090a;
+    --green: #35b8be;
+    --green-dark: #1b9097;
+    --green-light: #f5fbfc;
+    --blue-dark: #546285;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    display: flex; 
+    padding: 10px 0;   
+}
+
+nav ul {
+    display: none;
+}
+
+nav img {
+    width: 7%;
+}
+
+/* HEADER INTRODUCTION */
+
+header {
+    text-align: center;
+}
+
+header div {
+    margin-bottom: 100px;
+}
+
+header div h1 {
+    font-size: 3rem;
+    color: var(--gray-dark)
+}
+
+header div h1 span {
+    color: var(--green)
+}
+
+header div p {
+    color: var(--blue-dark);
+    padding-bottom: 20px;
+}
+
+header .btn-green {
+    text-decoration: none;
+    padding: 12px 28px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 4px;
+    background: url('../images/button_wave.svg'),
+     var(--green);     
+}
+
+header img {
+    width: 100%;
+}
+
+main .card {
+    text-align: center;
+}
+
+main .card img {
+    width: 100%;
+}
+
+main .card h2 {
+    font-size: 3rem;
+    color: var(--green);
+}
+
+main .btn-green {
+    text-decoration: none;
+    padding: 12px 28px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 4px;
+    background: url('../images/button_wave.svg'),
+     var(--green); 
+}
+
+main div p {
+    color: var(--blue-dark);
+    padding-bottom: 20px;
+}
+
+main div {
+    margin-bottom: 100px;
+}
