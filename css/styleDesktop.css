@@ -57,13 +57,17 @@ flex-direction: column;
 
 main .container {
 display: flex;
-text-align: left;
+}
+
+.box-eating {
+    text-align: left;
 }
 
 .rules-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 10px;
+    column-gap: 50px;
+    justify-content: center;
 }
 
 
