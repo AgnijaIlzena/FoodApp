@@ -127,7 +127,7 @@ main div {
 
 /* RULES */
 
-.rules h3 {
+main section h3 {
     color: var(--green);
     font-size: 2rem;
     text-align: center;
@@ -164,7 +164,8 @@ footer h5 {
 footer ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
     padding: 0;
 }
 
